@@ -18,8 +18,9 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
-    <!-- 공통 CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/bundle.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Font Awesome JS -->
     <script
@@ -31,19 +32,23 @@
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="./assets/ico/humans.png" alt="logo" />
-        <h1><a href="#">Seunggyun</a></h1>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="./assets/ico/humans.png"
+          alt="logo"
+        />
+        <h1 class="header__logo__title"><a href="#">Seunggyun</a></h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">홈으로</a></li>
-          <li><a href="#about">승균</a></li>
-          <li><a href="#skills">기술</a></li>
-          <li><a href="#work">포트폴리오</a></li>
-          <li><a href="#license">자격증</a></li>
-          <li><a href="#contact">연락처</a></li>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">홈으로</a></li>
+          <li><a class="header__menu__item" href="#about">승균</a></li>
+          <li><a class="header__menu__item" href="#skills">기술</a></li>
+          <li><a class="header__menu__item" href="#work">포트폴리오</a></li>
+          <li><a class="header__menu__item" href="#license">자격증</a></li>
+          <li><a class="header__menu__item" href="#contact">연락처</a></li>
         </ul>
       </nav>
     </header>
@@ -61,153 +66,159 @@
       <!-- home : end -->
 
       <!-- about : start -->
-      <section id="about">
-        <h2>승균</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-          magnam laborum dolorem temporibus aut quisquam excepturi saepe velit
-          exercitationem nemo voluptatum, sapiente aspernatur. Molestias maiores
-          sunt architecto ipsum corrupti necessitatibus.
-        </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>Front-end</p>
-            <p>HTML, CSS, JavaScript, React</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-mobile"></i>
-            <p>Mobile</p>
-            <p>React-Native, Android, iOS, Kotlin</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-server"></i>
-            <p>Back-end</p>
-            <p>Node.js, FastAPI, Java, GraphQL</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img
-              src="https://news.skhynix.co.kr/hubfs/0_Medialibrary_v2/Newsroom/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%98%81%EB%AC%B8%20CI_1_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg"
-              alt="SKhynix"
-            />
-            <div>
-              <p>SK하이닉스 NAND 장비기술팀</p>
-              <p>2018.03 ~ 2022.04</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="https://duologics.co.kr/images/common/logo_new.png"
-              alt="딜로그연금보험계리 초급 프리랜서"
-            />
-            <div>
-              <p>딜로그연금보험계리 (하나은행 프로젝트 프리랜서)</p>
-              <p>2023.05 ~ 2023.12</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="https://imgs.jobkorea.co.kr/img1/_whitebg/200X80/Co_Logo/Logo/2022/1/16/JK_CO_XXqwpif22011616520331.png?v=202410301424"
-              alt="Nsoftware"
-            />
-            <div>
-              <p>Nsoftware</p>
-              <p>2024.05 ~ 2024.09</p>
-            </div>
-          </li>
-        </ul>
+      <section id="about" class="section max-container">
+        <div class="max-container">
+          <h2 class="title">승균</h2>
+          <p class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
+            magnam laborum dolorem temporibus aut quisquam excepturi saepe velit
+            exercitationem nemo voluptatum, sapiente aspernatur. Molestias
+            maiores sunt architecto ipsum corrupti necessitatibus.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-brands fa-html5"></i>
+              <p>Front-end</p>
+              <p>HTML, CSS, JavaScript, React</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile"></i>
+              <p>Mobile</p>
+              <p>React-Native, Android, iOS, Kotlin</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-server"></i>
+              <p>Back-end</p>
+              <p>Node.js, FastAPI, Java, GraphQL</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img
+                src="https://news.skhynix.co.kr/hubfs/0_Medialibrary_v2/Newsroom/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%98%81%EB%AC%B8%20CI_1_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg"
+                alt="SKhynix"
+              />
+              <div>
+                <p>SK하이닉스 NAND 장비기술팀</p>
+                <p>2018.03 ~ 2022.04</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://duologics.co.kr/images/common/logo_new.png"
+                alt="딜로그연금보험계리 초급 프리랜서"
+              />
+              <div>
+                <p>딜로그연금보험계리 (하나은행 프로젝트 프리랜서)</p>
+                <p>2023.05 ~ 2023.12</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://imgs.jobkorea.co.kr/img1/_whitebg/200X80/Co_Logo/Logo/2022/1/16/JK_CO_XXqwpif22011616520331.png?v=202410301424"
+                alt="Nsoftware"
+              />
+              <div>
+                <p>Nsoftware</p>
+                <p>2024.05 ~ 2024.09</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- about : end -->
 
       <!-- skills : start -->
-      <section id="skills">
-        <h2>역량</h2>
-        <p>언어 및 도구</p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit at harum quaerat. Magnam quasi dicta saepe molestias.
-          Magnam, nobis nulla recusandae totam ratione esse sunt accusamus,
-          ullam, rerum nisi doloremque.
-        </p>
-        <div>
-          <section>
-            <h3>코딩 기술</h3>
-            <ul>
-              <li>
-                <div><span>HTML</span><span>98%</span></div>
-                <div><div style="width: 98"></div></div>
-              </li>
-              <li>
-                <div><span>CSS</span><span>90%</span></div>
-                <div><div style="width: 90"></div></div>
-              </li>
-              <li>
-                <div><span>JavaScript</span><span>90%</span></div>
-                <div><div style="width: 90"></div></div>
-              </li>
-              <li>
-                <div><span>React</span><span>80%</span></div>
-                <div><div style="width: 80"></div></div>
-              </li>
-              <li>
-                <div><span>Node.js</span><span>75%</span></div>
-                <div><div style="width: 75"></div></div>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>도구</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>PyCharm</li>
-              <li>Jupyter Notebook</li>
-              <li>Colab</li>
-              <li>Xcode</li>
-            </ul>
-          </section>
-          <section>
-            <h3>기타</h3>
-            <ul>
-              <li>Git</li>
-              <li>Math</li>
-            </ul>
-          </section>
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">역량</h2>
+          <p class="description">언어 및 도구</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit at harum quaerat. Magnam quasi dicta saepe molestias.
+            Magnam, nobis nulla recusandae totam ratione esse sunt accusamus,
+            ullam, rerum nisi doloremque.
+          </p>
+          <div>
+            <section>
+              <h3>코딩 기술</h3>
+              <ul>
+                <li>
+                  <div><span>HTML</span><span>98%</span></div>
+                  <div><div style="width: 98"></div></div>
+                </li>
+                <li>
+                  <div><span>CSS</span><span>90%</span></div>
+                  <div><div style="width: 90"></div></div>
+                </li>
+                <li>
+                  <div><span>JavaScript</span><span>90%</span></div>
+                  <div><div style="width: 90"></div></div>
+                </li>
+                <li>
+                  <div><span>React</span><span>80%</span></div>
+                  <div><div style="width: 80"></div></div>
+                </li>
+                <li>
+                  <div><span>Node.js</span><span>75%</span></div>
+                  <div><div style="width: 75"></div></div>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3>도구</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>PyCharm</li>
+                <li>Jupyter Notebook</li>
+                <li>Colab</li>
+                <li>Xcode</li>
+              </ul>
+            </section>
+            <section>
+              <h3>기타</h3>
+              <ul>
+                <li>Git</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- skills : end -->
 
       <!-- work : start -->
-      <section id="work">
-        <h2>포트폴리오</h2>
-        <p>Projects</p>
-        <ul>
-          <li>
-            <button>ALL <span>10</span></button>
-            <button>Front-end <span>3</span></button>
-            <button>Mobile <span>5</span></button>
-            <button>Back-end <span>2</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <img src="" alt="" />
-              <div>
-                <h3>project #1</h3>
-                <p>클론코딩 사이트</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">포트폴리오</h2>
+          <p class="description">Projects</p>
+          <ul>
+            <li>
+              <button>ALL <span>10</span></button>
+              <button>Front-end <span>3</span></button>
+              <button>Mobile <span>5</span></button>
+              <button>Back-end <span>2</span></button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" target="_blank">
+                <img src="" alt="" />
+                <div>
+                  <h3>project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- work : end -->
 
       <!-- license : start -->
-      <section id="license">
-        <h2>자격증</h2>
-        <p>국가 기술 자격증</p>
+      <section id="license" class="section">
+        <h2 class="title">자격증</h2>
+        <p class="description">국가 기술 자격증</p>
         <ul>
           <li>
             <img src="./images/license.jpg" alt="WSET" />
@@ -235,28 +246,30 @@
     </main>
 
     <!-- footer : start -->
-    <footer id="contact">
-      <h2>연락주세요!</h2>
-      <p>asg5450@gmail.com</p>
-      <ul>
-        <li>
-          <a href="https://github.com/asg5450" target="_blank" title="깃허브"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.notion.so/seunggyun-portfolio/117d4af236cc4324811b905b527bb5e7"
-            target="_blank"
-            title="Notion"
-            ><span
-              class="iconify"
-              data-icon="simple-icons:notion"
-              data-inline="false"
-            ></span>
-          </a>
-        </li>
-      </ul>
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">연락주세요!</h2>
+        <p class="description">asg5450@gmail.com</p>
+        <ul>
+          <li>
+            <a href="https://github.com/asg5450" target="_blank" title="깃허브"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.notion.so/seunggyun-portfolio/117d4af236cc4324811b905b527bb5e7"
+              target="_blank"
+              title="Notion"
+              ><span
+                class="iconify"
+                data-icon="simple-icons:notion"
+                data-inline="false"
+              ></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <!-- footer : end -->
   </body>
