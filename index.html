@@ -100,6 +100,7 @@
           <ul class="jobs">
             <li class="job">
               <img
+                class="job__img"
                 src="https://news.skhynix.co.kr/hubfs/0_Medialibrary_v2/Newsroom/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%98%81%EB%AC%B8%20CI_1_%ED%9A%8C%EC%82%AC_%EC%82%AC%EC%A7%84_2020.jpg"
                 alt="SKhynix"
               />
@@ -110,6 +111,7 @@
             </li>
             <li class="job">
               <img
+                class="job__img"
                 src="https://duologics.co.kr/images/common/logo_new.png"
                 alt="딜로그연금보험계리 초급 프리랜서"
               />
@@ -122,6 +124,7 @@
             </li>
             <li class="job">
               <img
+                class="job__img"
                 src="https://imgs.jobkorea.co.kr/img1/_whitebg/200X80/Co_Logo/Logo/2022/1/16/JK_CO_XXqwpif22011616520331.png?v=202410301424"
                 alt="Nsoftware"
               />
@@ -138,7 +141,7 @@
       <!-- skills : start -->
       <section id="skills" class="section">
         <div class="max-container">
-          <h2 class="title">역량</h2>
+          <h2 class="title">기술</h2>
           <p class="description">언어 및 도구</p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -155,7 +158,7 @@
                     <span>HTML</span><span>98%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 98"></div>
+                    <div class="bar__value" style="width: 98%"></div>
                   </div>
                 </li>
                 <li class="bar">
@@ -163,7 +166,7 @@
                     <span>CSS</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 90"></div>
+                    <div class="bar__value" style="width: 90%"></div>
                   </div>
                 </li>
                 <li class="bar">
@@ -171,7 +174,7 @@
                     <span>JavaScript</span><span>85%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 85"></div>
+                    <div class="bar__value" style="width: 85%"></div>
                   </div>
                 </li>
                 <li class="bar">
@@ -179,12 +182,12 @@
                     <span>React</span><span>70%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 70"></div>
+                    <div class="bar__value" style="width: 70%"></div>
                   </div>
                 </li>
               </ul>
             </section>
-            <section>
+            <section class="skills__tools">
               <h3 class="skills__title">도구</h3>
               <ul>
                 <li>Visual Studio Code</li>
@@ -211,20 +214,129 @@
         <div class="max-container">
           <h2 class="title">포트폴리오</h2>
           <p class="description">Projects</p>
-          <ul>
+          <ul class="categories">
             <li>
-              <button>ALL <span>10</span></button>
-              <button>Front-end <span>3</span></button>
-              <button>Mobile <span>5</span></button>
-              <button>Back-end <span>2</span></button>
+              <button class="category category--selected">
+                ALL <span class="category__count">10</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Front-end <span class="category__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Mobile <span class="category__count">5</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Back-end <span class="category__count">2</span>
+              </button>
             </li>
           </ul>
-          <ul>
-            <li>
+          <ul class="projects">
+            <li class="project">
               <a href="#" target="_blank">
-                <img src="" alt="" />
-                <div>
-                  <h3>project #1</h3>
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
+                  <p>클론코딩 사이트</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  class="project__img"
+                  src="./assets/image/ORD_SIN_Sabo_unit0.png"
+                  alt=""
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">project #1</h3>
                   <p>클론코딩 사이트</p>
                 </div>
               </a>
@@ -238,17 +350,43 @@
       <section id="license" class="section">
         <h2 class="title">자격증</h2>
         <p class="description">국가 기술 자격증</p>
-        <ul>
-          <li>
-            <img src="./images/license.jpg" alt="WSET" />
-            <div>
+        <ul class="licenses">
+          <li class="license">
+            <img
+              class="license__img"
+              src="./assets/image/HRDK.png"
+              alt="WSET"
+            />
+            <div class="license__bubble">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 eveniet ipsam fuga odio. Nesciunt facilis quae vel perferendis
                 eum. Recusandae veniam repellat, fuga sapiente quos eveniet
                 neque alias ex adipisci.
               </p>
-              <p><a href="#">정보처리기사</a></p>
+              <p><a class="license__bubble__name" href="#">정보처리기사</a></p>
+            </div>
+          </li>
+          <li class="license">
+            <img
+              class="license__img"
+              src="./assets/image/SQLD.png"
+              alt="한국산업인력공단"
+            />
+            <div class="license__bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                eveniet ipsam fuga odio. Nesciunt facilis quae vel perferendis
+                eum. Recusandae veniam repellat, fuga sapiente quos eveniet
+                neque alias ex adipisci.
+              </p>
+              <p>
+                <a
+                  class="license__bubble__name"
+                  href="https://www.dataq.or.kr/www/sub/a_04.do"
+                  >SQLD</a
+                >
+              </p>
             </div>
           </li>
         </ul>
@@ -257,8 +395,8 @@
 
       <!-- Arrow : start -->
       <aside>
-        <a href="#home" title="상단으로">
-          <i class="fa-solid fa-circle-up"></i>
+        <a class="arrow-up" href="#home" title="상단으로">
+          <i class="fa-solid fa-arrow-up"></i>
         </a>
       </aside>
       <!-- Arrow : end -->
@@ -269,14 +407,19 @@
       <div class="max-container">
         <h2 class="title">연락주세요!</h2>
         <p class="description">asg5450@gmail.com</p>
-        <ul>
+        <ul class="contact__links">
           <li>
-            <a href="https://github.com/asg5450" target="_blank" title="깃허브"
+            <a
+              class="contact__link"
+              href="https://github.com/asg5450"
+              target="_blank"
+              title="깃허브"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
           <li>
             <a
+              class="contact__link"
               href="https://www.notion.so/seunggyun-portfolio/117d4af236cc4324811b905b527bb5e7"
               target="_blank"
               title="Notion"
