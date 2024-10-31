@@ -1,3 +1,5 @@
+/* bundle.css : 기본 태그 성질 재정의, font와 CSS변수 등 전역적인 내용을 담고 있음 */
+
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
