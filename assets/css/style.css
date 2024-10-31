@@ -418,3 +418,8 @@
 }
 
 /* footer : end */
+
+/* 반응형 처리 : start */
+@media screen and (max-width: 768px) {
+}
+/* 반응형 처리 : end */
